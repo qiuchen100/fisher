@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+requests = "*"
+app = "*"
 
 [requires]
 python_version = "3.6"

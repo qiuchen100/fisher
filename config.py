@@ -3,5 +3,5 @@
 """
 __author__ = '邱晨'
 
-DEBUG = True
+DEBUG = False
 PORT = 81
