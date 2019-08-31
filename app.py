@@ -5,8 +5,5 @@ import fisher
 
 __author__ = '邱晨'
 
-
 if __name__ == '__main__':
     print('hello')
-
-
