@@ -1,7 +1,7 @@
 """
     created by 邱晨 on 2019/8/31 12:06 AM.
 """
-from httper import HTTP
+from app.libs.httper import HTTP
 from flask import current_app
 
 __author__ = '邱晨'

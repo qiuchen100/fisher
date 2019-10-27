@@ -3,5 +3,4 @@
 """
 __author__ = '邱晨'
 
-DEBUG = True
-PORT = 81
+PER_PAGE = 15
