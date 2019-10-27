@@ -1,16 +1,17 @@
 [[source]]
 name = "pypi"
-url = "https://pypi.org/simple"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 verify_ssl = true
 
 [dev-packages]
 
 [packages]
-flask = "*"
-requests = "*"
+flask = "==0.12.2"
+requests = "==2.18.4"
 app = "*"
-wtforms = "*"
-flask-sqlalchemy = "*"
+wtforms = "==2.2.1"
+flask-sqlalchemy = "==2.4.0"
+sqlalchemy = "==1.2.1"
 
 [requires]
 python_version = "3.6"
