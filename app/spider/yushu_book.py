@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
     created by 邱晨 on 2019/8/31 12:06 AM.
 """
@@ -19,8 +20,8 @@ class YuShuBook:
 
     @classmethod
     def search_by_keyword(cls, keyword, page=1):
-        url = cls.keyword_url.format(keyword, current_app.config['PER_PAGE'], 
-                                    cls.calculate_start(page))
+        url = cls.keyword_url.format(keyword, current_app.config['PER_PAGE'],
+                                     cls.calculate_start(page))
         result = HTTP.get(url)
         return result
 

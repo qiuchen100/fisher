@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
     created by 邱晨 on 2019/10/27 11:42 PM.
 """
@@ -21,4 +22,3 @@ class Book(db.Model):
     isbn = Column(String(15), nullable=False, unique=True)
     summary = Column(String(1000))
     image = Column(String(50))
-   

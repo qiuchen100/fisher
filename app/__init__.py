@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
     created by 邱晨 on 2019/8/31 9:45 PM.
 """
@@ -21,4 +22,3 @@ def create_app():
 def register_blueprint(app):
     from app.web import web
     app.register_blueprint(web)
-
