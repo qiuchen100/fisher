@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+{{ super() }}
+<ul>
+    {% for i in [1, 2, 3] %}
+    <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
