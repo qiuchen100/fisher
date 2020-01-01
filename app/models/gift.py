@@ -1,0 +1,19 @@
+# -*- coding: UTF-8 -*-
+"""
+    created by 邱晨 on 2019/10/27 11:42 PM.
+"""
+from sqlalchemy import Column, Integer, Boolean, ForeignKey, String
+from sqlalchemy.orm import relationship
+from app.models.base import Base
+
+__author__ = '邱晨'
+
+
+class Gift(Base):
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user = relationship('User')
+    uid = Column(Integer, ForeignKey('user.id'))
+    # book = relationship('Book')
+    # bid = Column(Integer, ForeignKey('book.id'))
+    isbn = Column(String(15), nullable=False)
+    launched = Column(Boolean, default=False)

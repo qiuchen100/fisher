@@ -36,6 +36,10 @@ class YuShuBook:
         self.total = data['total']
         self.books = data['books']
 
+    @property
+    def first(self):
+        return self.books[0] if self.total >= 1 else None
+
     @staticmethod
     def calculate_start(page):
         return (page-1)*current_app.config['PER_PAGE']
